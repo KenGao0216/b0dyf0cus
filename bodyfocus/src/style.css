@@ -1,0 +1,56 @@
+nav {
+    display: flex;
+    font-size: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.M-G {
+    display: flex;
+    
+}
+.checklist{
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+}
+
+.item{
+    display: flex;
+    align-items: center; /* Align items horizontally within each checklist item */
+    margin: 15px 0px ;
+}
+
+.item input {
+    margin-right: 5px;
+}
+
+.userAdd{
+    display: flex;
+    flex-direction: column;
+    width: 50 px;
+    margin-left: 100px;
+    
+}
+
+.muscleGroups{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+}
+
+.muscleGroups label {
+    margin: 5px;
+}
+
+.message {
+    position: absolute;
+    top: 0px;
+    right: 100px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #000000; 
+   
+    padding: 10px 10px;
+    /*border-radius: 8px;*/
+}
