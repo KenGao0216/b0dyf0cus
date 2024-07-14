@@ -211,14 +211,22 @@ export default function Main(){
 
     const getWorkoutLink = (workout) => { 
         const workoutLinks = {
-            bicepCurls: "/images/bicep-curls.webp",
+            /*bicepCurls: "/images/bicep-curls.webp",
             squats: "/images/squats.webp",
             hammerCurls: "/images/hammer-curls.webp",
             benchPress: "/images/bench-press.webp",
             deadLift: "/images/deadlift.webp",
             calfRaises: "/images/calf-raises.webp",
             pullups: "/images/pull-ups.webp", 
-            situps: "/images/sit-ups.webp",
+            situps: "/images/sit-ups.webp",*/
+            bicepCurls: `${process.env.PUBLIC_URL}/images/bicep-curls.webp`,
+            squats: `${process.env.PUBLIC_URL}/images/squats.webp`,
+            hammerCurls: `${process.env.PUBLIC_URL}/images/hammer-curls.webp`,
+            benchPress: `${process.env.PUBLIC_URL}/images/bench-press.webp`,
+            deadLift: `${process.env.PUBLIC_URL}/images/deadlift.webp`,
+            calfRaises: `${process.env.PUBLIC_URL}/images/calf-raises.webp`,
+            pullups: `${process.env.PUBLIC_URL}/images/pull-ups.webp`, 
+            situps: `${process.env.PUBLIC_URL}/images/sit-ups.webp`,
         };
         return workoutLinks[workout] || "#";
     };
