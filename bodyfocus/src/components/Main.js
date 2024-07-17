@@ -371,11 +371,11 @@ export default function Main(){
             {highestCount > 0 && (
             <div className="message">
             <p>
-                {highestCategory === "arm" && "TODAY IS MAINLY ARM DAY"}
-                {highestCategory === "leg" && "TODAY IS MAINLY LEG DAY"}
-                {highestCategory === "core" && "TODAY IS MAINLY CORE DAY"}
-                {highestCategory === "chest" && "TODAY IS MAINLY CHEST DAY"}
-                {highestCategory === "back" && "TODAY IS MAINLY BACK DAY"}
+                {highestCategory === "arm" && "TODAY IS ARM DAY"}
+                {highestCategory === "leg" && "TODAY IS LEG DAY"}
+                {highestCategory === "core" && "TODAY IS CORE DAY"}
+                {highestCategory === "chest" && "TODAY IS CHEST DAY"}
+                {highestCategory === "back" && "TODAY IS BACK DAY"}
             </p>
             </div>
             )}
