@@ -1,8 +1,58 @@
-nav {
+.navbar {
     display: flex;
-    font-size: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f1f1f1;
+    color: #000000;
+}
+
+.navbar h1 {
+    font-size: 1.5em;
+}
+
+.info-icon-container {
+    position: relative;
+    display: inline-block;
+}
+
+.info-icon {
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.tooltip-message {
+    visibility: hidden;
+    width: 200px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 100%;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: opacity 0.3s, left 0.3s, right 0.3s;
+}
+
+.tooltip-message::after {
+    content: "";
+    position: absolute;
+    top: 50%; 
+    left: 0;
+    margin-top: -5px;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent #555 transparent transparent;
+}
+
+.info-icon-container:hover .tooltip-message {
+    visibility: visible;
+    opacity: 1;
 }
 
 .M-G {
@@ -17,7 +67,7 @@ nav {
 
 .item{
     display: flex;
-    align-items: center; /* Align items horizontally within each checklist item */
+    align-items: center; 
     margin: 15px 0px ;
 }
 
