@@ -227,6 +227,7 @@ export default function Main(){
             calfRaises: `${process.env.PUBLIC_URL}/images/calf-raises.webp`,
             pullups: `${process.env.PUBLIC_URL}/images/pull-ups.webp`, 
             situps: `${process.env.PUBLIC_URL}/images/sit-ups.webp`,*/
+            
         };
         return workoutLinks[workout] || "#";
     };
